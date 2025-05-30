@@ -1,5 +1,5 @@
 
-.main_part{
+main{
     background: url("/gallery/kbtu_background.png") fixed repeat-x;
     background-size: cover;
     backdrop-filter: blur(5px);
