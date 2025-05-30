@@ -1,0 +1,14 @@
+.focus li{
+    list-style: none;
+}
+
+.main_part{
+    background: url("/gallery/kbtu_background.png") fixed repeat-x;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+}
+
+.main_part::before{
+    background-color: rgba(0, 0, 0, 0,5);
+}
