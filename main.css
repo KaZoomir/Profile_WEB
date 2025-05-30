@@ -48,6 +48,7 @@
 
 main{
   background-color: bisque;
+  min-height: calc(100vh - 170px);
   flex: 1;
 }
 

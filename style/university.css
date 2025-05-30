@@ -7,6 +7,7 @@ main{
     background-size: cover;
     backdrop-filter: blur(5px);
     color: aliceblue;
+    min-height: calc(100vh - 170px);
 }
 
 .main_part::before{
