@@ -1,12 +1,33 @@
-
+html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent; /* Убираем белый фон */
+    height: 100%;
+}
 main{
     min-height: calc(100vh - 170px);
-    background: url("/gallery/ktl_background.JPG") fixed repeat-x;
-    background-size: cover;
-    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0; 
+
     color: aliceblue;
 }
 
 .info p{
     text-align: center;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+.background-of-school{
+    background: url("/gallery/ktl_background.JPG") center/cover no-repeat;
+    filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
 }
