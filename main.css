@@ -50,11 +50,11 @@ body{
 
 /* Main information */
 
-main{
+/* main{
   background-color: bisque;
   min-height: calc(100vh - 170px);
   flex: 1;
-}
+} */
 
 .face{
   width: 300px;

@@ -1,11 +1,31 @@
 main{
     min-height: calc(100vh - 170px);
-    background: url("/gallery/football_field.png") fixed repeat-x;
-    background-size: cover;
-    backdrop-filter: blur(5px) ;
-    color:aliceblue
+    top: 0;
+    left: 0;
+    color:aliceblue;
 }
 
-table{
-    
+.background-page{
+    background: url("/gallery/football_field.png") center/cover no-repeat;
+    position: fixed;
+    filter:blur(5px);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
+
+
+.content{
+    z-index:1;
+}
+
+.table-of-players{
+    margin: 25px;
+    border-collapse:collapse ;
+}
+
+.table-of-players,th,td{
+    border: 1px solid;
+    color: white;
+}
+
