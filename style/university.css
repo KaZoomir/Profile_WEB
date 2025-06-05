@@ -17,8 +17,8 @@ main{
     z-index: -1;
 }
 .content{
-    background-color: rgba(0, 0, 0, 0,5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .main_part::before{
-    background-color: rgba(0, 0, 0, 0,5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
