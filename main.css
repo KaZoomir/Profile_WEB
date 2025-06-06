@@ -152,6 +152,22 @@ body {
   font-size: 14px;
 }
 
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p{
+  margin-left:20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* Social Links */
 .social-links {
   display: flex;
@@ -173,14 +189,6 @@ body {
   background: #2980b9;
 }
 
-/* Footer */
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
 
 /* Mobile */
 @media (max-width: 768px) {
