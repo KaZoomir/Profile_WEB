@@ -48,6 +48,7 @@
 
 .school-info {
    margin-bottom: 30px;
+   list-style: none;
 }
 
 .school-info h3 {
@@ -55,4 +56,9 @@
     margin-bottom: 15px;
     color: black;
     border-bottom: 2px solid lightblue;
+} 
+
+.school-advantages {
+    margin-left: 20px;
+    list-style:circle;
 }

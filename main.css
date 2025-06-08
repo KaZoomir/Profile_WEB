@@ -159,7 +159,9 @@ footer {
   color: white;
   text-align: left;
   padding: 20px;
-  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 footer p{
@@ -172,13 +174,13 @@ footer p{
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link {
   display: inline-block;
   padding: 10px 20px;
-  background: #3498db;
   color: white;
   text-decoration: none;
   border-radius: 5px;
