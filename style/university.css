@@ -43,3 +43,43 @@
     margin-bottom: 20px;
     color: gray;
 }
+
+.university-info {
+    margin-bottom: 30px;
+}
+
+.university-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+    display: flex;
+}
+
+.university-info p {
+    font-size: 16px;
+}
+
+.university-schools {
+    margin-bottom: 20px;
+}
+
+.university-schools h4 {
+    font-size: 20px;
+}
+
+.university-schools ul{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.university-school {
+    margin-bottom: 10px;
+    list-style: circle;
+}
+
+.university-school li {
+    font-size: 14px;
+}
+
+
+
