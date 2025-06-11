@@ -167,6 +167,44 @@
     font-size: 14px;
     opacity: 0.9;
    }
+/* Players Table */
+   .table-of-players {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .table-of-players th {
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+   }
+   
+   .table-of-players td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    color: #333;
+   }
+   
+   .table-of-players tr:last-child td {
+    border-bottom: none;
+   }
+   
+   .table-of-players tr:nth-child(even) {
+    background-color: #f8f9fa;
+   }
+   
+   .table-of-players tr:hover {
+    background-color: #e3f2fd;
+   }
+   
    
    /* Mobile */
    @media (max-width: 768px) {
