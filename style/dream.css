@@ -1,0 +1,210 @@
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.dreams-header {
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dreams-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dreams-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dreams-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.dream-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #3498db;
+    position: relative;
+    overflow: hidden;
+}
+
+.dream-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #9b59b6, #e74c3c, #f39c12);
+    opacity: 0.7;
+}
+
+.dream-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.dream-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.dream-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.dream-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dream-status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-planning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-progress {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-achieved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.dream-timeline {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+    min-width: 80px;
+    margin-right: 20px;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: #666;
+    margin: 0;
+}
+
+.inspiration-quote {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.inspiration-quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration-quote cite {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .dreams-header h1 {
+        font-size: 2rem;
+    }
+    
+    .dreams-header p {
+        font-size: 1rem;
+    }
+    
+    .dreams-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .dream-card {
+        padding: 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .timeline-year {
+        margin-bottom: 10px;
+    }
+}
