@@ -30,13 +30,25 @@
 
         <main>
             <script>
-                alert('Hi');
+                function DreamQuestion() {
+                    let question = prompt("Do you have dream? (Yes/No)");
+
+                    if (question == "Yes"){
+                        return alert("Good");
+                    }
+                    else if (question == "No"){
+                        return alert("It's so sad :(");    
+                    }
+                    else {
+                        alert("Error");
+                        return DreamQuestion;
+                    }
+                    return 0;
+                }
+                DreamQuestion();
             </script>
 
-            <script>
-                let name = 'Kassi';
-                alert(name)
-            </script>
+
         </main>
 
 
