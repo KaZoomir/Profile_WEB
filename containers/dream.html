@@ -58,8 +58,23 @@
                     alert(`Sum of first and second numbers is = ${number1++ + +number2++}`);
                 }
 
-                Guest();
 
+                function Izumaki() {
+                    let massive = [];
+                    let start = 1;
+                    let finish = 9;
+                    for (let i = 0; i < 3; i++){
+                        massive[i] = [];
+                        for (let j = 0; j < 3; j++){
+                            massive[i][j] = start;
+                            start++;
+                        }
+                    }
+                    let message = massive.map(row => row.join(" ")).join("\n");
+                    alert(message);
+                }
+
+                Izumaki();
 
             </script>
 
