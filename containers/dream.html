@@ -60,16 +60,41 @@
 
 
                 function Izumaki() {
-                    let massive = [];
                     let start = 1;
-                    let finish = 9;
-                    for (let i = 0; i < 3; i++){
-                        massive[i] = [];
-                        for (let j = 0; j < 3; j++){
-                            massive[i][j] = start;
-                            start++;
-                        }
+                    let finish = parseInt(prompt("Enter the size of square matrix (n):"));
+                    if (isNaN(finish) || finish <= 0) {
+                        alert("Invalid number!");
+                        return;
                     }
+                    const massive = Array.from({ length: finish }, () => Array(finish).fill(0));
+                    let top = 0;
+                    let left = 0;
+                    let bottom = finish - 1;
+                    let right = finish - 1;
+                    while (start <= finish*finish){
+                    
+                        for (let i = left; i <= right; i++){
+                            massive[top][i] = start++;
+                        }
+                        top++;
+
+                        for (let i = top; i <= bottom; i++){
+                            massive[i][bottom] = start++;
+                        }
+                        right --;
+
+                        for (let i = right; i >= left; i--){
+                            massive[bottom][i] = start++;
+                        }
+                        bottom--;
+
+                        for (let i = bottom; i >= top; i--){
+                            massive[i][left] = start++;
+                        }
+                        left++;
+                    }
+
+
                     let message = massive.map(row => row.join(" ")).join("\n");
                     alert(message);
                 }
